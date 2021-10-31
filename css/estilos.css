@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+:root {
+  --color-fondo: rgb(248, 237, 235);
+  --color-primario:rgb(255, 181, 167);
+  --color-secundario: rgb(252, 213, 206);
+  --color-terciario: rgb(249, 220, 196);
+
+  --color-texto: rgb(254, 200, 154);
+  --xxcolor-link: rgb(254, 200, 154);
+  --fuente: "Bad Script", cursive;
+}
+
+
+/*** SETEO INICIAL ***/
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--color-link);
+  transition: all 0.7s ease-out;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.25rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: 0.85rem;}
+h6 {font-size: 0.7rem;}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--fuente);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {   line-height: 1.6; }
+
+footer {
+  background: #41474a;
+  /*background: rgb(26, 117, 159);*/
+  color: #aaa;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+
+.footer {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.footer-links {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% - 1rem);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 30px;
+  height: auto;
+  text-align: center;
+  color: #999;
+}
+
+.footer-copyrights {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: calc(100% - 1rem);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.header-carrusel {
+  /*background-image: url("../img/saludbienestar.png");*/
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding-top: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: var(--color-primario);
+  padding: 5px;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.nav a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
